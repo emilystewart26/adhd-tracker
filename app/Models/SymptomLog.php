@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class SymptomLog extends Model
 {
-    //
+    public function user()
+{
+    return $this->belongsTo(User::class);
+}
+
 }
